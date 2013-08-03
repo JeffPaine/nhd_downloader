@@ -1,6 +1,6 @@
 # Download the National Hydrography Dataset (NHD)
 
-SUB_REGIONS = \
+SUBREGIONS = \
 		0101 0102 0103 0104 0105 0106 0107 0108 0109 0110 0202 0203 0204 0205 0206 \
 		0207 0208 0301 0302 0303 0304 0305 0306 0307 0308 0309 0310 0311 0312 0313 \
 		0314 0315 0316 0317 0318 0401 0402 0403 0404 0405 0406 0407 0408 0409 0410 \
@@ -17,7 +17,7 @@ SUB_REGIONS = \
 		1804 1805 1806 1807 1808 1809 1810 1901 1902 1903 1904 1905 1906 1907 2001 \
 		2002 2003 2004 2005 2006 2007 2008 2101 2102 2201 2202 2203
 
-SUB_REGIONS_FTP_URL = ftp://nhdftp.usgs.gov/DataSets/Staged/SubRegions/FileGDB/HighResolution/
+SUBREGIONS_FTP_URL = ftp://nhdftp.usgs.gov/DataSets/Staged/SubRegions/FileGDB/HighResolution/
 
 STATES = \
 		AK AL AR AZ CA CO CT DC DE FL GA HI IA ID IL IN \
@@ -28,9 +28,9 @@ STATES = \
 STATES_FTP_URL = ftp://nhdftp.usgs.gov/DataSets/Staged/States/FileGDB/HighResolution/
 
 
-all: sub_regions
+all: subregions
 
-sub_regions: $(patsubst %,gdb/NHDH%.gdb,$(SUB_REGIONS))
+subregions: $(patsubst %,gdb/NHDH%.gdb,$(SUBREGIONS))
 
 states: $(patsubst %,zip/NHDH_%_931v210.zip,$(STATES))
 
@@ -94,7 +94,7 @@ WI: gdb/NHDH_WI.gdb  # Wisconsin
 WV: gdb/NHDH_WV.gdb  # West Virginia
 WY: gdb/NHDH_WY.gdb  # Wyoming
 
-# For downloading one sub-region at a time
+# For downloading one subregion at a time
 0101: gdb/NHDH0101.gdb  # St. John
 0102: gdb/NHDH0102.gdb  # Penobscot
 0103: gdb/NHDH0103.gdb  # Kennebec
@@ -342,11 +342,11 @@ gdb/NHDH_%.gdb: zip/NHDH_%_931v210.zip
 
 
 # ###################################################################
-# Download NHD data, by watershed sub-region
+# Download NHD data, by watershed subregion
 # ###################################################################
 zip/NHDH%_931v210.zip:
 	mkdir -p $(dir $@)
-	wget '$(SUB_REGIONS_FTP_URL)$(notdir $@)' --output-document=$@.download
+	wget '$(SUBREGIONS_FTP_URL)$(notdir $@)' --output-document=$@.download
 	mv $@.download $@
 
 # Unzip zip files to gdb directory
