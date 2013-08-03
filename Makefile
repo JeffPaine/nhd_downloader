@@ -40,59 +40,59 @@ clean:
 
 
 # For downloading one state at a time
-AK: gdb/NHDH_AK.gdb
-AL: gdb/NHDH_AL.gdb
-AR: gdb/NHDH_AR.gdb
-AZ: gdb/NHDH_AZ.gdb
-CA: gdb/NHDH_CA.gdb
-CO: gdb/NHDH_CO.gdb
-CT: gdb/NHDH_CT.gdb
-DC: gdb/NHDH_DC.gdb
-DE: gdb/NHDH_DE.gdb
-FL: gdb/NHDH_FL.gdb
-GA: gdb/NHDH_GA.gdb
-HI: gdb/NHDH_HI.gdb
-IA: gdb/NHDH_IA.gdb
-ID: gdb/NHDH_ID.gdb
-IL: gdb/NHDH_IL.gdb
-IN: gdb/NHDH_IN.gdb
-KS: gdb/NHDH_KS.gdb
-KY: gdb/NHDH_KY.gdb
-LA: gdb/NHDH_LA.gdb
-MA: gdb/NHDH_MA.gdb
-MD: gdb/NHDH_MD.gdb
-ME: gdb/NHDH_ME.gdb
-MI: gdb/NHDH_MI.gdb
-MN: gdb/NHDH_MN.gdb
-MO: gdb/NHDH_MO.gdb
-MS: gdb/NHDH_MS.gdb
-MT: gdb/NHDH_MT.gdb
-NC: gdb/NHDH_NC.gdb
-ND: gdb/NHDH_ND.gdb
-NE: gdb/NHDH_NE.gdb
-NH: gdb/NHDH_NH.gdb
-NJ: gdb/NHDH_NJ.gdb
-NM: gdb/NHDH_NM.gdb
-NV: gdb/NHDH_NV.gdb
-NY: gdb/NHDH_NY.gdb
-OH: gdb/NHDH_OH.gdb
-OK: gdb/NHDH_OK.gdb
-OR: gdb/NHDH_OR.gdb
-PA: gdb/NHDH_PA.gdb
-PR: gdb/NHDH_PR.gdb
-RI: gdb/NHDH_RI.gdb
-SC: gdb/NHDH_SC.gdb
-SD: gdb/NHDH_SD.gdb
-TN: gdb/NHDH_TN.gdb
-TX: gdb/NHDH_TX.gdb
-UT: gdb/NHDH_UT.gdb
-VA: gdb/NHDH_VA.gdb
-VI: gdb/NHDH_VI.gdb
-VT: gdb/NHDH_VT.gdb
-WA: gdb/NHDH_WA.gdb
-WI: gdb/NHDH_WI.gdb
-WV: gdb/NHDH_WV.gdb
-WY: gdb/NHDH_WY.gdb
+AK: gdb/NHDH_AK.gdb  # Alaska
+AL: gdb/NHDH_AL.gdb  # Alabama
+AR: gdb/NHDH_AR.gdb  # Arkansas
+AZ: gdb/NHDH_AZ.gdb  # Arizona
+CA: gdb/NHDH_CA.gdb  # California
+CO: gdb/NHDH_CO.gdb  # Colorado
+CT: gdb/NHDH_CT.gdb  # Connecticut
+DC: gdb/NHDH_DC.gdb  # District of Columbia
+DE: gdb/NHDH_DE.gdb  # Delaware
+FL: gdb/NHDH_FL.gdb  # Florida
+GA: gdb/NHDH_GA.gdb  # Georgia
+HI: gdb/NHDH_HI.gdb  # Hawaii
+IA: gdb/NHDH_IA.gdb  # Iowa
+ID: gdb/NHDH_ID.gdb  # Idaho
+IL: gdb/NHDH_IL.gdb  # Illinois
+IN: gdb/NHDH_IN.gdb  # Indiana
+KS: gdb/NHDH_KS.gdb  # Kansas
+KY: gdb/NHDH_KY.gdb  # Kentucky
+LA: gdb/NHDH_LA.gdb  # Louisiana
+MA: gdb/NHDH_MA.gdb  # Massachusetts
+MD: gdb/NHDH_MD.gdb  # Maryland
+ME: gdb/NHDH_ME.gdb  # Maine
+MI: gdb/NHDH_MI.gdb  # Michigan
+MN: gdb/NHDH_MN.gdb  # Minnesota
+MO: gdb/NHDH_MO.gdb  # Missouri
+MS: gdb/NHDH_MS.gdb  # Mississippi
+MT: gdb/NHDH_MT.gdb  # Montana
+NC: gdb/NHDH_NC.gdb  # North Carolina
+ND: gdb/NHDH_ND.gdb  # North Dakota
+NE: gdb/NHDH_NE.gdb  # Nebraska
+NH: gdb/NHDH_NH.gdb  # New Hampshire
+NJ: gdb/NHDH_NJ.gdb  # New Jersey
+NM: gdb/NHDH_NM.gdb  # New Mexico
+NV: gdb/NHDH_NV.gdb  # Nevada
+NY: gdb/NHDH_NY.gdb  # New York
+OH: gdb/NHDH_OH.gdb  # Ohio
+OK: gdb/NHDH_OK.gdb  # Oklahoma
+OR: gdb/NHDH_OR.gdb  # Oregon
+PA: gdb/NHDH_PA.gdb  # Pennsylvania
+PR: gdb/NHDH_PR.gdb  # Puerto Rico
+RI: gdb/NHDH_RI.gdb  # Rhode Island
+SC: gdb/NHDH_SC.gdb  # South Carolina
+SD: gdb/NHDH_SD.gdb  # South Dakota
+TN: gdb/NHDH_TN.gdb  # Tennessee
+TX: gdb/NHDH_TX.gdb  # Texas
+UT: gdb/NHDH_UT.gdb  # Utah
+VA: gdb/NHDH_VA.gdb  # Virginia
+VI: gdb/NHDH_VI.gdb  # Virgin Islands
+VT: gdb/NHDH_VT.gdb  # Vermont
+WA: gdb/NHDH_WA.gdb  # Washington
+WI: gdb/NHDH_WI.gdb  # Wisconsin
+WV: gdb/NHDH_WV.gdb  # West Virginia
+WY: gdb/NHDH_WY.gdb  # Wyoming
 
 # For downloading one sub-region at a time
 0101: gdb/NHDH0101.gdb  # St. John
