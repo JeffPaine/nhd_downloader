@@ -4,30 +4,55 @@ A simple makefile for downloading the [National Hydrography Dataset (NHD)](http:
 
 ## Usage
 
-From the command line, in the project directory:
+ 1. [Download](https://github.com/JeffPaine/nhd_downloader/archive/master.zip) the project
+ 2. Unzip the archive
+ 3. In the shell, navigate to the resulting directory
+ 4. Run one of the commands below depending on your needs
 
-### Download All Subregions
+ Or, completely from the command line
 
-    make sub_regions
+```bash
+$ wget https://github.com/JeffPaine/nhd_downloader/archive/master.zip
+$ unzip master.zip -d nhd_downloader
+$ cd nhd_downloader/
+```
+
+## Commands
+
+### All Subregions
+
+These are subregions ([HUC 4](http://water.usgs.gov/GIS/huc.html)) as defined by the [Watershed Boundary Dataset](http://nhd.usgs.gov/wbd.html)
+
+```bash
+$ make subregions
+```
 
 Size: ~12.8 Gigabytes
 
-### Download Single Sub-Region
+### Single Subregion
 
-    make REPLACE_WITH_SUB-REGION_HUC_CODE
+```bash
+$ make REPLACE_WITH_SUBREGION_HUC_CODE
+```
 
-### Download All States
+### All States
 
-    make states
+```bash
+$ make states
+```
 
 Size: ~17.5 Gigabytes
 
-Note: this will cause some overlap / duplication in data as it includes reaches that extend out of a state's boundaries. Hence, the larger download size.
+Note: this will cause overlap and duplication of data as it includes reaches that extend out of a state's boundaries. Hence, the significantly larger download size.
 
-### Download Single State
+### Single State
 
-    make REPLACE_WITH_STATE_TWO_LETTER_ABBREVIATION
+```bash
+$ make REPLACE_WITH_STATE_TWO_LETTER_ABBREVIATION
+```
 
-### Delete Downloaded Files
+### Delete All Downloaded / Unzipped Files
 
-    make clean
+```bash
+$ make clean
+```
