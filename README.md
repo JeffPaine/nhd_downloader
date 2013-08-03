@@ -9,7 +9,7 @@ A simple makefile for downloading the [National Hydrography Dataset (NHD)](http:
  3. In the shell, navigate to the resulting directory
  4. Run one of the commands below depending on your needs
 
- Or, completely from the command line
+Or, completely from the command line
 
 ```bash
 $ wget https://github.com/JeffPaine/nhd_downloader/archive/master.zip
