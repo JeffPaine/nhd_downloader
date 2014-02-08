@@ -2,6 +2,8 @@
 
 A simple makefile for downloading the [National Hydrography Dataset (NHD)](http://nhd.usgs.gov/).
 
+>The National Hydrography Dataset (NHD) and Watershed Boundary Dataset (WBD) are used to portray surface water on The National Map. The NHD represents the drainage network with features such as rivers, streams, canals, lakes, ponds, coastline, dams, and streamgages. The WBD represents drainage basins as enclosed areas in eight different size categories.
+
 ## Download
 
 From the command line:
@@ -27,7 +29,7 @@ These are subregions ([HUC 4](http://water.usgs.gov/GIS/huc.html)) as defined by
 ### Single Subregion
 
 ```bash
-$ make REPLACE_WITH_SUBREGION_HUC_CODE
+$ make SUBREGION_HUC_CODE
 ```
 
 See the Makefile for example subregion codes and names.
@@ -43,7 +45,7 @@ Download size: ~17.5 Gigabytes. Note: this will cause overlap and duplication of
 ### Single State
 
 ```bash
-$ make REPLACE_WITH_STATE_TWO_LETTER_ABBREVIATION
+$ make STATE_TWO_LETTER_ABBREVIATION
 ```
 
 ### Delete All Downloaded / Unzipped Files
