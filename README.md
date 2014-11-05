@@ -4,6 +4,11 @@ A simple makefile for downloading the [National Hydrography Dataset (NHD)](http:
 
 >The National Hydrography Dataset (NHD) and Watershed Boundary Dataset (WBD) are used to portray surface water on The National Map. The NHD represents the drainage network with features such as rivers, streams, canals, lakes, ponds, coastline, dams, and streamgages. The WBD represents drainage basins as enclosed areas in eight different size categories.
 
+## Requirements
+
+ * `make`
+ * `wget`
+
 ## Download
 
 From the command line:
