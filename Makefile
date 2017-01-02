@@ -32,7 +32,7 @@ all: subregions
 
 subregions: $(patsubst %,gdb/NHDH%.gdb,$(SUBREGIONS))
 
-states: $(patsubst %,zip/NHDH_%_931v210.zip,$(STATES))
+states: $(patsubst %,zip/NHDH_%_931v220.zip,$(STATES))
 
 clean:
 	rm -rf zip/
@@ -327,14 +327,14 @@ WY: gdb/NHDH_WY.gdb  # Wyoming
 # ###################################################################
 # Download NHD data, by state
 # ###################################################################
-zip/NHDH_%_931v210.zip:
+zip/NHDH_%_931v220.zip:
 	mkdir -p $(dir $@)
 	wget '$(STATES_FTP_URL)$(notdir $@)' --output-document=$@.download
 	mv $@.download $@
 
 # Unzip zip files to gdb directory
 # Using touch to update the modification time of the extracted files so make doesn't try to update them every run
-gdb/NHDH_%.gdb: zip/NHDH_%_931v210.zip
+gdb/NHDH_%.gdb: zip/NHDH_%_931v220.zip
 	mkdir -p $(dir $@)
 	unzip -q -n -d gdb $<
 	touch $@
@@ -344,14 +344,14 @@ gdb/NHDH_%.gdb: zip/NHDH_%_931v210.zip
 # ###################################################################
 # Download NHD data, by watershed subregion
 # ###################################################################
-zip/NHDH%_931v210.zip:
+zip/NHDH%_931v220.zip:
 	mkdir -p $(dir $@)
 	wget '$(SUBREGIONS_FTP_URL)$(notdir $@)' --output-document=$@.download
 	mv $@.download $@
 
 # Unzip zip files to gdb directory
 # Using touch to update the modification time of the extracted files so make doesn't try to update them every run
-gdb/NHDH%.gdb: zip/NHDH%_931v210.zip
+gdb/NHDH%.gdb: zip/NHDH%_931v220.zip
 	mkdir -p $(dir $@)
 	unzip -q -n -d gdb $<
 	touch $@
